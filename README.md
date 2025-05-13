@@ -104,6 +104,7 @@ Q9. Write a SQL query to find the number of unique customers who purchased items
 	FROM retail_sales
     GROUP BY category;
 Q10. Write a SQL query to create each shift and the number of sales in each shift (Morning, Afternoon and Evening)
+'''sql
 	WITH sales_per_hour
 AS 
 (
@@ -118,5 +119,7 @@ SELECT Shift,
 	COUNT(*) AS total_sales
 FROM sales_per_hour
 GROUP BY Shift;
+'''
 We determine that the evening shift has the highest number of orders 
+
 
