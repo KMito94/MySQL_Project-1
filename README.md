@@ -7,7 +7,7 @@ The following is an Exploratory Data Analysis (EDA) of sales data using MySQL. T
 First, we create a database and a table where the data is to be stored. After the table is creating the dataset downloaded from Kaggle is then import into MySQL table for exploration.
 	CREATE database MySQL_ProjectP1;
 
-
+"""sql
 CREATE TABLE retail sales 
 		(
 				transactions_id INT PRIMARY KEY,
@@ -22,6 +22,7 @@ CREATE TABLE retail sales
                 cogs FLOAT,
                 total sale FLOAT 
 		)
+  '''
 Checking That the Data Is Correctly Imported 
 To ensure all the records are correctly imported, we check the number of records
 SELECT COUNT(*) from retail_sales;
