@@ -2,7 +2,7 @@
 The project uses Mysql to do an Exploratory Data Analysis of a sales dataset 
 
 **Introduction **
-The following is an Exploratory Data Analysis (EDA) of sales data using MySQL. The aim of the analysis is to retrieve some insights about the data set so that business owners can advise them on the best strategies to implement to improve sales and customer service in their enterprises.
+The following is an Exploratory Data Analysis (EDA) of sales data using MySQL. The aim of the analysis is to retrieve some insights about the data set so that we can advise business owners  the best strategies to implement to improve sales and customer service in their enterprises.
 **Creation Of Database and Sales Table** 
 First, we create a database and a table where the data is to be stored. After the table is creating the dataset downloaded from Kaggle is then import into MySQL table for exploration.
 	CREATE database MySQL_ProjectP1;
@@ -63,9 +63,11 @@ Q3. Write a SQL query to calculate the total sale for each category and total nu
 	FROM retail_sales
 	group by 1;
 Q4. Write an SQl query to get the average age of customers who bought from the beauty category 
-	SELECT ROUND(AVG(age), 2) as avg_age
+'''SQL
+ 	SELECT ROUND(AVG(age), 2) as avg_age
 	FROM retail_sales
     WHERE category = 'Beauty';
+'''
 And this case the average age for a person buying from beauty category is 40 years 
 Q5. Write an SQL query find all the transactions where the total_sale is greater than 1000
 	SELECT 
